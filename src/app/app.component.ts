@@ -1,10 +1,11 @@
 import { Component, ViewChild } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { TetrisComponent } from './tetris/tetris.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TetrisComponent],
+  imports: [RouterOutlet, TetrisComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

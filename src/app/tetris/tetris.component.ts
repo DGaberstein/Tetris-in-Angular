@@ -1,7 +1,11 @@
 import { Component, HostListener, OnInit, Output, EventEmitter } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TetrisBoardComponent } from './tetris-board.component';
 
 @Component({
   selector: 'app-tetris',
+  standalone: true,
+  imports: [CommonModule, TetrisBoardComponent],
   templateUrl: './tetris.component.html',
   styleUrls: ['./tetris.component.css']
 })
