@@ -1,0 +1,3 @@
+<div class="tetris-grid">
+  <div *ngFor="let cell of cells" [class.filled]="cell === 1" [class.clearing]="cell === 2"></div>
+</div>

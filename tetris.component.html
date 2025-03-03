@@ -1,0 +1,8 @@
+<div class="tetris-container">
+  <div class="tetris-grid" *ngIf="cells.length > 0; else noCells">
+    <div class="tetris-cell" *ngFor="let cell of cells" [class.filled]="cell === 1"></div>
+  </div>
+  <ng-template #noCells>
+    <p>No cells to display</p>
+  </ng-template>
+</div>
